@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="../JAVASRIPT PROJECTS/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/">
+  <link rel="stylesheet" href="../JAVASRIPT PROJECTS/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.js">
+  <link rel="stylesheet" href="./Rechargecard.css">
+</head>
+<body>
+    
+    <div class="nav-header mt-5">
+        <div class="container  mt-5" id="container">
+            <marquee direction = "right" class=" create text-dark text-center">RECHARGE CARD</marquee>
+            <span class=" yh d-flex gap-5 p-2 ms-5 mt-4">
+                <Select class="network-selector p-1" id="Net">
+                    <option value="Select Network">Select Network</option>
+                    <option value="Mtn">Mtn</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="Glo">Glo</option>
+                    <option value="9mobile">9mobile</option>
+                </Select>
+                <Select class="amount-selector p-1" id="amount">
+                    <option value="Select Network">Select Amount</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="1500">1500</option>
+                    <option value="2000">2000</option>
+                </Select>
+                <span class="butt gap-3 d-flex">
+                    <button class="btn-circle btn-dark p-1" id="gen" onclick="Generate()">Generate Pin</button>
+                    <button class="btn-circle btn-dark p-1" id="siv" onclick="Save()">Save Pin</button>
+                </span>
+            </span>
+               <div class="recharge mt-5 ms-5 d-flex gap-5">
+                <input class="form-control w-50 " id="display" type="number" disabled placeholder="Save Pin here">
+                <input class="form-control w-50 " id="display1" type="text"  placeholder="Enter Pin here">
+               </div>
+               <button class="btn-rounded mt-4 btn-primary" onclick="Recharge()">RECHARGE</button>
+               <h1 class="text-center text-white mt-2">HISTROY</h1>
+               <table class="table mt-3" border="3">
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Date Printed</th>
+                    <th>Pin</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+                <!-- <h2 class="text-center text-white mt-3">HISTROY</h2>
+                <th>
+                    <td>Name</td>
+                    <td>Date Printed</td>
+                    <td>Status</td>
+                    <td></td>
+                </tr> -->
+    </div>
+</body>
+<script src="./Rechargecard.js"></script>
+</html>
